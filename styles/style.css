@@ -128,6 +128,8 @@
   align-items: center;
   min-height: 757px;
   padding: 165px 50px 50px 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/cover.jpg") center/cover no-repeat;
 }
 
 .cover__title {
@@ -222,6 +224,8 @@
   gap: 30px;
   height: 100%;
   padding: 48px 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    var(--bg) center/cover no-repeat;
 }
 
 .card__title {
@@ -304,17 +308,7 @@
   transform: scale(1.1);
 }
 
-/* Background images (README.md) */
-
-.cover,
-.card {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    var(--bg) center/cover no-repeat;
-}
-
-.cover {
-  --bg: url("../images/cover.jpg");
-}
+/* Background images */
 
 .lots__grid li:nth-child(1) .card {
   --bg: url("../images/card-lot-01.jpg");
