@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-   <!--  <img
+    <!-- <img
       class="pixel-perfect-image"
       src="./images/maquette.png"
       alt="Pixelperfect debugging image"
@@ -30,10 +30,10 @@
         </ul>
       </nav>
       <a href="#">
-        <img 
-          class="header__logo" 
-          src="./images/logo-black.svg" 
-          alt="Оно тебе надо" 
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Оно тебе надо"
         />
       </a>
       <address class="contacts text__menu">
@@ -66,49 +66,62 @@
         <h2 class="lots__title title text__title">Лоты</h2>
         <ul class="lots__grid nobullet text__color-inverted">
           <li>
-            <a class="card">
-              <h3 class="title card__title">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <p class="text__description">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </a>
+            <div class="card card_type_film">
+              <a class="card__link" href="#">
+                <h3 class="title card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="text__description">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </a>
+            </div>
           </li>
           <li>
-            <a class="card">
-              <h3 class="title card__title">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
-              <p class="text__description">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
-            </a>
+            <div class="card card_type_book">
+              <a class="card__link" href="#">
+                <h3 class="title card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="text__description">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </a>
+            </div>
           </li>
           <li>
-            <a class="card">
-              <h3 class="title card__title">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
-              <p class="text__description">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
-            </a>
+            <div class="card card_type_painting">
+              <a class="card__link" href="#">
+                <h3 class="title card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="text__description">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </a>
+            </div>
           </li>
         </ul>
         <a class="lots__more link" href="#">посмотреть больше</a>
       </section>
       <section class="about">
-        <a class="about__logo" href="#"></a>
+        <a class="about__logo-link" href="#">
+          <img
+            class="about__logo-image"
+            src="./images/logo-white.svg"
+            alt="Оно тебе надо"
+          />
+        </a>
         <article class="about__content">
           <h2 class="title text__title about__title">Об аукционе</h2>
           <p class="text__description">

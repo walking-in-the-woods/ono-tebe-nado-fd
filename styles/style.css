@@ -107,14 +107,13 @@
   align-self: center;
 }
 
-.header__logo {
+.header__logo-image {
   display: block;
   width: 148px;
   height: 105px;
-  background: url("../images/logo-black.svg") center / contain no-repeat;
 }
 
-.header__logo:hover {
+.header__logo-image:hover {
   transform: scale(1.02);
 }
 
@@ -217,6 +216,18 @@
 /* Card */
 
 .card {
+  display: flex;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    var(--bg) center/cover no-repeat;
+}
+
+.card:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--bg);
+}
+
+.card__link {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -224,18 +235,11 @@
   gap: 30px;
   height: 100%;
   padding: 48px 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    var(--bg) center/cover no-repeat;
 }
 
 .card__title {
   font-size: 22px;
   line-height: 120%;
-}
-
-.card:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    var(--bg);
 }
 
 .lots__more {
@@ -254,18 +258,24 @@
   padding: 37px 0 180px 47px;
 }
 
-.about__logo {
-  display: block;
+.about__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: #000000 url("../images/logo-white.svg") center / 148px 144px
-    no-repeat;
+  background: #000000;
   transition: transform 0.3s ease;
 }
 
-.about__logo:hover {
+.about__logo-link:hover {
   transform: scale(1.02);
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 144px;
 }
 
 .about__content {
@@ -310,14 +320,14 @@
 
 /* Background images */
 
-.lots__grid li:nth-child(1) .card {
+.card_type_film {
   --bg: url("../images/card-lot-01.jpg");
 }
 
-.lots__grid li:nth-child(2) .card {
+.card_type_book {
   --bg: url("../images/card-lot-02.jpg");
 }
 
-.lots__grid li:nth-child(3) .card {
+.card_type_painting {
   --bg: url("../images/card-lot-03.jpg");
 }
