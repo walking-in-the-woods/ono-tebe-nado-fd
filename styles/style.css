@@ -235,11 +235,13 @@
   gap: 30px;
   height: 100%;
   padding: 48px 40px;
+  text-decoration: none;
 }
 
 .card__title {
   font-size: 22px;
   line-height: 120%;
+  text-decoration: underline;
 }
 
 .lots__more {
